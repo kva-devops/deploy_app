@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  nginx:
+    image: registry.gitlab.com/xdpugachevx/docker-swarm-course/nginx:latest
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+
+  php:
+    image: registry.gitlab.com/xdpugachevx/docker-swarm-course/php:latest
+    build:
+      context: .
+      dockerfile: ./docker/php/Dockerfile

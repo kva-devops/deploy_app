@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  nginx:
+    image: kvadevops/app:nginx
+    ports:
+      - 80:80
+  php:
+    image: kvadevops/app:php
